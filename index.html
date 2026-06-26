@@ -705,6 +705,27 @@ body > a[href*="framer.com/market"] {
   visibility: hidden !important;
   pointer-events: none !important;
 }</style>
+<style id="custom-section-trim">
+/* Hide everything from "Why work with me" through "FAQ" except the Portfolio/Selected work section */
+section[data-framer-name="Benefits"],
+section[data-framer-name="Services"],
+section[data-framer-name="Process"],
+section[data-framer-name="Testimonials"],
+section[data-framer-name="Pricing"],
+section[data-framer-name="FAQ"],
+section.framer-1mc3ozo,
+section.framer-knnqvr,
+section.framer-fwquas,
+section.framer-15o9iwo,
+section.framer-1ds3zo4,
+section.framer-m5xzdj {
+  display: none !important;
+}
+/* Hide now-dead nav link to the removed Services section */
+a[href$="#services"] {
+  display: none !important;
+}
+</style>
 </head>
 <body>
 	
